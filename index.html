@@ -69,11 +69,11 @@
               $('#post-box').show();
               $('#btn-posting-box').text('포스팅 박스 닫기');
           }
+          get_cards()
       }
 
-
-
-      $('.card').empty();
+      function get_cards() {
+        $('#cards-box').empty();
               
         $.ajax({
           type: "GET",
@@ -104,6 +104,8 @@
                 }
              }
           });
+      }
+      
   </script>
     
     </head>
